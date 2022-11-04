@@ -1,0 +1,37 @@
+{
+  "name": "publishment-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "COUNTRY=chile node index.js",
+    "dev": "PORT=4000 COUNTRY=chile JOB=productos-MKP nodemon index.js",
+    "ripley-skus": "PORT=8000 COUNTRY=chile JOB=productos-ripley node index.js",
+    "ripley-skus-mercado": "PORT=6200 COUNTRY=chile JOB=productos-MKP node index.js",
+    "json-promo": "PORT=2500 COUNTRY=chile JOB=promotions node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "axios": "^0.27.2",
+    "bluebird": "^3.7.2",
+    "event-stream": "^4.0.1",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "imgix-core-js": "^2.3.2",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.6.0",
+    "read-excel-file": "^5.3.3",
+    "readline": "^1.3.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sleep": "^6.3.0",
+    "slug": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
